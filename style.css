@@ -31,15 +31,32 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  background-color: var(--color-primary-darker);
+  height: 100vh; /* height =  altura */
+}
+
+body {
+  background-color: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  /* padding: 10px 40px 60px 5px; 12h 3h 6h 9h - sentido horário top, right, bottom, left */
+  /* font: 500 1.6rem Poppins */
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  color: var(--color-text-base);
 }
 
 #container {
-  /* box model */
+  width: 90vw; /* width - largura */
+  max-width: 700px;
   border: 1px solid red;
-  width: 300px;
-  height: 300px;
-  padding: 10px 40px 60px 5px; /* 12h 3h 6h 9h - sentido horário */
-  margin: 40px 10px;
 }
